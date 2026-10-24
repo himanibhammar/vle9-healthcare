@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MediCare Secure - Modern, reliable, and secure digital healthcare platform designed with security-first engineering principles.">
+  <title>MediCare Secure | Your Health, Our Priority</title>
+  
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ======================================================================
+       Navigation Bar
+       ====================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- Brand Logo -->
+        <a href="#home" class="brand-logo" id="brand-logo" aria-label="MediCare Secure Home">
+          <div class="brand-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20M2 12h20" />
+            </svg>
+          </div>
+          <span>MediCare <span class="brand-accent">Secure</span></span>
+        </a>
+
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="nav-links" role="menubar">
+          <li role="none"><a href="#home" class="nav-link active" role="menuitem">Home</a></li>
+          <li role="none"><a href="#services" class="nav-link" role="menuitem">Services</a></li>
+          <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+          <li role="none"><a href="#lookup" class="nav-link" role="menuitem">Patient Portal</a></li>
+          <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+          <!-- Mobile CTA displayed only on smaller screens -->
+          <li role="none" class="mobile-cta" style="display: none;">
+            <a href="#lookup" class="btn btn-primary" style="width: 100%;">Get Started</a>
+          </li>
+        </ul>
+
+        <!-- Right Action Button & Mobile Toggle -->
+        <div class="nav-actions">
+          <a href="#lookup" class="btn btn-primary" id="nav-get-started">Get Started</a>
+          <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- ====================================================================
+         Hero Section
+         ==================================================================== -->
+    <section class="section hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: Copy & Actions -->
+          <div class="hero-content">
+            <!-- Trust Indicator -->
+            <div class="trust-badge" id="trust-indicator">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="m9 12 2 2 4-4"></path>
+              </svg>
+              <span>Secure Digital Healthcare Architecture</span>
+            </div>
+
+            <h1 class="hero-title">
+              Your Health, <br><span class="highlight">Our Priority.</span>
+            </h1>
+
+            <p class="hero-lead">
+              Accessible, reliable, and secure healthcare services designed for patients and caregivers. Experience effortless appointments and dependable care built on a modern, privacy-focused foundation.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#services" class="btn btn-primary" id="hero-btn-explore">Explore Services</a>
+              <a href="#about" class="btn btn-secondary" id="hero-btn-learn">Learn More</a>
+            </div>
+
+            <!-- Supporting Trust Metrics -->
+            <div class="hero-metrics">
+              <div class="metric-item">
+                <span class="metric-number">24/7</span>
+                <span class="metric-label">Patient Support</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number">100%</span>
+                <span class="metric-label">Confidential Care</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-number">99.9%</span>
+                <span class="metric-label">System Availability</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Visual Illustration -->
+          <div class="hero-visual">
+            <div class="hero-card-wrapper">
+              <!-- SVG Illustration: Healthcare & Security Concept -->
+              <svg class="illustration-svg" viewBox="0 0 420 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Modern healthcare illustration with medical shield and heart vital pulse">
+                <defs>
+                  <linearGradient id="bgGrad" x1="0" y1="0" x2="420" y2="320" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#F8FAFC" />
+                    <stop offset="1" stop-color="#E6FFFA" />
+                  </linearGradient>
+                  <linearGradient id="primaryGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop stop-color="#0D9488" />
+                    <stop offset="1" stop-color="#059669" />
+                  </linearGradient>
+                  <filter id="shadowFilter" x="-10" y="-10" width="440" height="340" filterUnits="userSpaceOnUse">
+                    <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0F172A" flood-opacity="0.06"/>
+                  </filter>
+                </defs>
+
+                <!-- Base Graphic Canvas -->
+                <rect width="420" height="320" rx="16" fill="url(#bgGrad)"/>
+
+                <!-- Pulse Line in Background -->
+                <path d="M40 160 H110 L125 125 L145 195 L165 140 L180 170 L195 160 H380" stroke="#CCFBF1" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M110 160 L125 125 L145 195 L165 140 L180 170 L195 160" stroke="#0D9488" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.8"/>
+
+                <!-- Central Medical Protection Card -->
+                <g filter="url(#shadowFilter)">
+                  <rect x="80" y="55" width="260" height="210" rx="14" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5"/>
+                </g>
+
+                <!-- Card Header -->
+                <rect x="105" y="80" width="36" height="36" rx="8" fill="#F0FDFA"/>
+                <path d="M123 90 V106 M115 98 H131" stroke="#0D9488" stroke-width="3" stroke-linecap="round"/>
+                
+                <rect x="155" y="86" width="100" height="10" rx="5" fill="#334155"/>
+                <rect x="155" y="103" width="60" height="7" rx="3.5" fill="#94A3B8"/>
+
+                <!-- Status Pill inside Card -->
+                <rect x="270" y="86" width="52" height="18" rx="9" fill="#ECFDF5"/>
+                <text x="296" y="99" fill="#059669" font-size="9" font-weight="700" text-anchor="middle" font-family="system-ui">VERIFIED</text>
+
+                <!-- Card Details Placeholder Blocks -->
+                <rect x="105" y="135" width="210" height="34" rx="8" fill="#F8FAFC" stroke="#F1F5F9"/>
+                <circle cx="125" cy="152" r="7" fill="#0D9488" fill-opacity="0.2"/>
+                <circle cx="125" cy="152" r="3" fill="#0D9488"/>
+                <rect x="142" y="148" width="120" height="8" rx="4" fill="#64748B"/>
+
+                <rect x="105" y="180" width="210" height="34" rx="8" fill="#F8FAFC" stroke="#F1F5F9"/>
+                <circle cx="125" cy="197" r="7" fill="#059669" fill-opacity="0.2"/>
+                <circle cx="125" cy="197" r="3" fill="#059669"/>
+                <rect x="142" y="193" width="140" height="8" rx="4" fill="#64748B"/>
+
+                <!-- Card Footer Bar -->
+                <rect x="105" y="228" width="80" height="18" rx="6" fill="#0D9488"/>
+                <text x="145" y="240" fill="#FFFFFF" font-size="9" font-weight="700" text-anchor="middle" font-family="system-ui">CONFIRMED</text>
+
+                <!-- Floating Shield Icon -->
+                <g transform="translate(290, 185)" filter="url(#shadowFilter)">
+                  <circle cx="28" cy="28" r="28" fill="url(#primaryGrad)"/>
+                  <path d="M28 17 C22 17 19 19 19 23 C19 32 28 37 28 37 C28 37 37 32 37 23 C37 19 34 17 28 17 Z" fill="#FFFFFF" fill-opacity="0.2" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M25 27 L27.5 29.5 L31.5 24.5" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                </g>
+
+                <!-- Floating Heart Icon -->
+                <g transform="translate(60, 180)" filter="url(#shadowFilter)">
+                  <circle cx="24" cy="24" r="24" fill="#FFFFFF" stroke="#E2E8F0"/>
+                  <path d="M24 30 L22.5 28.7 C17.4 24.1 14 21 14 17.2 C14 14.1 16.4 11.7 19.5 11.7 C21.2 11.7 22.9 12.5 24 13.8 C25.1 12.5 26.8 11.7 28.5 11.7 C31.6 11.7 34 14.1 34 17.2 C34 21 30.6 24.1 25.5 28.7 L24 30 Z" fill="#EF4444"/>
+                </g>
+              </svg>
+
+              <!-- Floating Micro-Badges for Depth -->
+              <div class="floating-badge badge-top" aria-hidden="true">
+                <div class="floating-badge-icon">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 6 9 17l-5-5"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="floating-badge-title">HIPAA Aligned</div>
+                  <div class="floating-badge-desc">Privacy-First Standards</div>
+                </div>
+              </div>
+
+              <div class="floating-badge badge-bottom" aria-hidden="true">
+                <div class="floating-badge-icon">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="18" height="18" x="3" y="3" rx="2"></rect>
+                    <path d="m9 12 2 2 4-4"></path>
+                  </svg>
+                </div>
+                <div>
+                  <div class="floating-badge-title">Zero Trust Ready</div>
+                  <div class="floating-badge-desc">Simulated DevSecOps</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Healthcare Services Section
+         ==================================================================== -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Comprehensive Care</span>
+          <h2 class="section-title">Designed for Patient Well-Being</h2>
+          <p class="section-subtitle">
+            Reliable, accessible medical support designed around modern patient needs and high clinical standards.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Card 1: General Healthcare -->
+          <article class="service-card" id="service-general">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/>
+                <path d="M8 15v1a6 6 0 0 0 6 6v0a6 6 0 0 0 6-6v-4"/>
+                <circle cx="20" cy="10" r="2"/>
+              </svg>
+            </div>
+            <h3 class="service-title">General Healthcare</h3>
+            <p class="service-text">
+              Comprehensive preventive diagnostics, routine wellness evaluations, and personalized medical consultations to help you stay ahead of health concerns.
+            </p>
+            <ul class="service-features">
+              <li class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Preventive health check-ups</span>
+              </li>
+              <li class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Chronic condition management</span>
+              </li>
+              <li class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Diagnostic lab coordination</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Card 2: Patient Support -->
+          <article class="service-card" id="service-support">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/>
+                <path d="M12 5 9.04 7.96a2.17 2.17 0 0 0 0 3.08c.82.82 2.13.85 3 .07l2.07-1.9a2.82 2.82 0 0 1 3.79 0l2.96 2.66"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Patient Support</h3>
+            <p class="service-text">
+              Compassionate, around-the-clock guidance from dedicated care coordinators ensuring answers to your medical inquiries and continuous post-consultation care.
+            </p>
+            <ul class="service-features">
+              <li class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>24/7 dedicated care assistance</span>
+              </li>
+              <li class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Post-treatment follow-up calls</span>
+              </li>
+              <li class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Caregiver coordination guidance</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Card 3: Appointment Assistance -->
+          <article class="service-card" id="service-appointment">
+            <div class="service-icon-box" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                <line x1="16" x2="16" y1="2" y2="6"/>
+                <line x1="8" x2="8" y1="2" y2="6"/>
+                <line x1="3" x2="21" y1="10" y2="10"/>
+                <path d="m9 16 2 2 4-4"/>
+              </svg>
+            </div>
+            <h3 class="service-title">Appointment Assistance</h3>
+            <p class="service-text">
+              Seamless booking for in-person clinic visits and virtual telehealth appointments, supported with real-time slot confirmations and automated reminders.
+            </p>
+            <ul class="service-features">
+              <li class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Instant doctor slot scheduling</span>
+              </li>
+              <li class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Automated SMS & email reminders</span>
+              </li>
+              <li class="service-feature-item">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Simple rescheduling & cancellation</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         About Section
+         ==================================================================== -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <!-- Left: About Text & Principles -->
+          <div class="about-content">
+            <span class="section-badge">About MediCare Secure</span>
+            <h2 class="section-title">Reimagining Healthcare with Reliability & Digital Privacy</h2>
+            <p class="about-lead">
+              MediCare Secure combines compassionate care with rigorous digital integrity, providing patients a trusted space to manage their health journey.
+            </p>
+            <p class="about-desc">
+              Modern healthcare relies on immediate access and steadfast data privacy. Our platform is designed from the ground up to respect patient confidentiality, offering accessible digital interfaces, transparent communication, and reliable uptime.
+            </p>
+
+            <div class="about-features">
+              <div class="about-feature-box">
+                <h4>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <rect width="18" height="11" x="3" y="11" rx="2" ry="2"/>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                  </svg>
+                  <span>Confidential by Design</span>
+                </h4>
+                <p>Ensuring personal medical inquiries remain strictly protected with modern encryption principles.</p>
+              </div>
+
+              <div class="about-feature-box">
+                <h4>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                  </svg>
+                  <span>High Reliability</span>
+                </h4>
+                <p>Constructed for round-the-clock dependability so healthcare assistance is always accessible.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Visual Highlights Card -->
+          <div class="about-visual-card">
+            <div class="about-card-stat">
+              <div class="stat-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                </svg>
+              </div>
+              <div class="stat-text">
+                <h5>Proactive Digital Care</h5>
+                <p>Continuous health coordination designed for real-time responsiveness.</p>
+              </div>
+            </div>
+
+            <div class="about-card-stat">
+              <div class="stat-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div class="stat-text">
+                <h5>Security-First Philosophy</h5>
+                <p>Engineered to illustrate best practices in secure development lifecycles.</p>
+              </div>
+            </div>
+
+            <div class="about-card-stat">
+              <div class="stat-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div class="stat-text">
+                <h5>Seamless Patient Flow</h5>
+                <p>Intuitive appointments and inquiry tracking for patients and families.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Patient Lookup Demonstration Section
+         ==================================================================== -->
+    <section class="section section-alt lookup-section" id="lookup">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Interactive Demo</span>
+          <h2 class="section-title">Patient Record Lookup Demonstration</h2>
+          <p class="section-subtitle">
+            Explore our simulated portal search interface. This demonstration is part of the DevSecOps experimental pipeline testbed.
+          </p>
+        </div>
+
+        <div class="lookup-card">
+          <form id="patient-lookup-form" class="lookup-form" novalidate>
+            <div class="form-group">
+              <label for="patient-id-input" class="form-label">
+                <span>Patient Identification Number</span>
+                <span class="form-label-hint">Sample: MED-2026-X</span>
+              </label>
+              
+              <div class="input-wrapper">
+                <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input 
+                  type="text" 
+                  id="patient-id-input" 
+                  name="patientId" 
+                  class="form-input" 
+                  placeholder="Enter your Patient ID (e.g., MED-84920)"
+                  aria-describedby="patient-id-hint"
+                  required
+                >
+              </div>
+              <small id="patient-id-hint" class="visually-hidden" style="display:none;">Input your alphanumeric patient reference number to test lookup response.</small>
+            </div>
+
+            <div class="form-submit-row">
+              <button type="submit" class="btn btn-primary" id="btn-patient-search">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <span>Search Record</span>
+              </button>
+              <p class="form-footnote">
+                <strong>Privacy Notice:</strong> Safe evaluation sandbox. No real patient records are connected, stored, or transmitted by this frontend application.
+              </p>
+            </div>
+          </form>
+
+          <!-- Interactive Results Container -->
+          <div id="lookup-result" class="lookup-result" role="status" aria-live="polite">
+            <div class="demo-alert">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="12"></line>
+                <line x1="12" y1="16" x2="12.01" y2="16"></line>
+              </svg>
+              <div class="demo-alert-content">
+                <div class="demo-alert-title" id="demo-alert-title">Demo Environment Notice</div>
+                <div class="demo-alert-text" id="demo-alert-text">
+                  Demo only: Patient record lookup is not connected yet.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         Security Highlights Section
+         ==================================================================== -->
+    <section class="section" id="security">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Security Architecture</span>
+          <h2 class="section-title">DevSecOps Pillars in Healthcare</h2>
+          <p class="section-subtitle">
+            Informational overview of the foundational security practices guiding secure development in healthcare environments.
+          </p>
+        </div>
+
+        <div class="security-grid">
+          <!-- Pillar 1: Secure Development -->
+          <div class="security-card" id="security-pillar-1">
+            <div class="security-header-row">
+              <div class="security-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="16 18 22 12 16 6"/>
+                  <polyline points="8 6 2 12 8 18"/>
+                </svg>
+              </div>
+              <span class="security-pill">Shift-Left</span>
+            </div>
+            <h3 class="security-title">Secure Development</h3>
+            <p class="security-desc">
+              Embedding security standards into the software development life cycle through automated static code analysis, peer reviews, and secure coding standards from the very first commit.
+            </p>
+          </div>
+
+          <!-- Pillar 2: Vulnerability Scanning -->
+          <div class="security-card" id="security-pillar-2">
+            <div class="security-header-row">
+              <div class="security-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <circle cx="12" cy="11" r="3"/>
+                </svg>
+              </div>
+              <span class="security-pill">Automated Scans</span>
+            </div>
+            <h3 class="security-title">Vulnerability Scanning</h3>
+            <p class="security-desc">
+              Continuous examination of third-party dependencies, libraries, and application artifacts to detect known vulnerabilities (CVEs) and enforce remediation before deployment.
+            </p>
+          </div>
+
+          <!-- Pillar 3: Continuous Monitoring -->
+          <div class="security-card" id="security-pillar-3">
+            <div class="security-header-row">
+              <div class="security-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect width="20" height="14" x="2" y="3" rx="2"/>
+                  <line x1="8" x2="16" y1="21" y2="21"/>
+                  <line x1="12" x2="12" y1="17" y2="21"/>
+                </svg>
+              </div>
+              <span class="security-pill">Observability</span>
+            </div>
+            <h3 class="security-title">Continuous Monitoring</h3>
+            <p class="security-desc">
+              Proactive tracking of application telemetry, system health, and audit logs to ensure high availability, detect anomalies, and uphold operational resilience for critical care systems.
+            </p>
+          </div>
+        </div>
+
+        <div class="security-disclaimer">
+          <strong>Note:</strong> The security highlights shown above represent informational architectural principles for this educational experiment and do not indicate live background scanning tools on this static page.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================================================================
+       Footer
+       ====================================================================== -->
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Col 1: Brand & Overview -->
+        <div class="footer-brand">
+          <a href="#home" class="brand-logo" aria-label="MediCare Secure Home">
+            <div class="brand-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2v20M2 12h20" />
+              </svg>
+            </div>
+            <span>MediCare <span class="brand-accent">Secure</span></span>
+          </a>
+          <p>
+            An educational healthcare web portal built for academic demonstration of secure DevSecOps pipelines and modern UI architecture.
+          </p>
+          <div class="footer-badge">
+            <span>DevSecOps Project Experiment</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Healthcare Services</a></li>
+            <li><a href="#about">About Platform</a></li>
+            <li><a href="#lookup">Patient Portal</a></li>
+            <li><a href="#security">Security Architecture</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Services -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="#services">General Healthcare</a></li>
+            <li><a href="#services">Patient Support</a></li>
+            <li><a href="#services">Appointment Booking</a></li>
+            <li><a href="#about">Privacy Standards</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Info -->
+        <div class="footer-col">
+          <h4>Contact & Info</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>+1 (800) 555-CARE (Demo)</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+            <span>support@medicare-secure.local</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>Academic Lab, Health Informatics Dept.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom">
+        <p class="footer-bottom-copy">
+          &copy; 2026 MediCare Secure. College DevSecOps Experiment: <strong>"Secure DevSecOps Implementation in Healthcare Systems"</strong>. All rights reserved.
+        </p>
+        <div class="footer-bottom-links">
+          <a href="#about">Privacy Notice</a>
+          <a href="#security">Security Model</a>
+          <a href="#home">Back to top &uarr;</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
