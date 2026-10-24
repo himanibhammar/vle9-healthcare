@@ -41,11 +41,12 @@ pipeline {
             }
         }
                 
+
         stage('OWASP ZAP DAST Scan') {
             steps {
                 bat '''
                     if not exist zap-reports mkdir zap-reports
-                    docker run --rm -t -v "%CD%/zap-reports:/zap/wrk:rw" ghcr.io/zaproxy/zaproxy:stable zap-baseline.py -t http://host.docker.internal:8081 -r zap-report.html
+                    docker run --rm -t -v "%CD%/zap-reports:/zap/wrk:rw" ghcr.io/zaproxy/zaproxy:stable zap-baseline.py -I -t http://host.docker.internal:8081 -r zap-report.html
                 '''
             }
             post {
@@ -55,6 +56,7 @@ pipeline {
                 }
             }
         }
+
 
     }
 
