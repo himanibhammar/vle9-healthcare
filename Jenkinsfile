@@ -16,12 +16,30 @@ pipeline {
             }
         }
 
-        
-        stage('Trivy Security Scan') {
+        stage('Save Docker Image') {
             steps {
-                bat 'docker run --rm -v //./pipe/docker_engine://./pipe/docker_engine aquasec/trivy:latest image --docker-host npipe:////./pipe/docker_engine --severity HIGH,CRITICAL healthcare-app:%BUILD_NUMBER%'
+                bat 'docker save -o healthcare-app-%BUILD_NUMBER%.tar healthcare-app:%BUILD_NUMBER%'
             }
         }
 
+        stage('Trivy Security Scan') {
+            steps {
+                bat 'docker run --rm -v "%CD%:/work" aquasec/trivy:latest image --input /work/healthcare-app-%BUILD_NUMBER%.tar --severity HIGH,CRITICAL'
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Pipeline completed successfully. Trivy scan finished.'
+        }
+
+        failure {
+            echo 'Pipeline failed. Check Console Output for the error.'
+        }
+
+        always {
+            echo 'VLE-9 Healthcare DevSecOps pipeline execution finished.'
+        }
     }
 }
