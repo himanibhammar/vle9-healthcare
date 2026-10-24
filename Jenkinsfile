@@ -16,10 +16,12 @@ pipeline {
             }
         }
 
+        
         stage('Trivy Security Scan') {
             steps {
-                bat 'docker run --rm aquasec/trivy:latest image --severity HIGH,CRITICAL healthcare-app:%BUILD_NUMBER%'
+                bat 'docker run --rm -v //./pipe/docker_engine://./pipe/docker_engine aquasec/trivy:latest image --docker-host npipe:////./pipe/docker_engine --severity HIGH,CRITICAL healthcare-app:%BUILD_NUMBER%'
             }
         }
+
     }
 }
