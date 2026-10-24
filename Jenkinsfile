@@ -2,8 +2,9 @@
 pipeline {
     agent any
 
-    tools {
-        sonarRunner 'SonarScanner'
+    environment {
+        SONAR_SCANNER_HOME = tool name: 'SonarScanner',
+            type: 'hudson.plugins.sonar.SonarRunnerInstallation'
     }
 
     stages {
@@ -17,7 +18,7 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('SonarQube') {
-                    bat 'sonar-scanner.bat -Dsonar.projectKey=vle9-healthcare'
+                    bat '"%SONAR_SCANNER_HOME%\\bin\\sonar-scanner.bat" -Dsonar.projectKey=vle9-healthcare'
                 }
             }
         }
