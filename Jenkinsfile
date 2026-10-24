@@ -10,6 +10,14 @@ pipeline {
             }
         }
 
+        stage('SonarQube Analysis') {
+            steps {
+                withSonarQubeEnv('SonarQube') {
+                    bat 'sonar-scanner -D"sonar.projectKey=vle9-healthcare"'
+                }
+            }
+        }
+
         stage('Build Docker Image') {
             steps {
                 bat 'docker build -t healthcare-app:%BUILD_NUMBER% .'
@@ -31,13 +39,11 @@ pipeline {
 
     post {
         success {
-            echo 'Pipeline completed successfully. Trivy scan finished.'
+            echo 'Pipeline completed successfully.'
         }
-
         failure {
-            echo 'Pipeline failed. Check Console Output for the error.'
+            echo 'Pipeline failed. Check Console Output.'
         }
-
         always {
             echo 'VLE-9 Healthcare DevSecOps pipeline execution finished.'
         }
