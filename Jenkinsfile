@@ -2,6 +2,10 @@
 pipeline {
     agent any
 
+    tools {
+        sonarRunner 'SonarScanner'
+    }
+
     stages {
         stage('Checkout') {
             steps {
@@ -13,7 +17,7 @@ pipeline {
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('SonarQube') {
-                    bat 'sonar-scanner -D"sonar.projectKey=vle9-healthcare"'
+                    bat 'sonar-scanner.bat -Dsonar.projectKey=vle9-healthcare'
                 }
             }
         }
