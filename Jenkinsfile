@@ -18,7 +18,7 @@ pipeline {
 
         stage('Trivy Security Scan') {
             steps {
-                bat 'docker run --rm -v "%CD%:/work" aquasec/trivy:latest image --input /work/healthcare-app-v2.tar'
+                bat 'docker run --rm aquasec/trivy:latest image --severity HIGH,CRITICAL healthcare-app:%BUILD_NUMBER%'
             }
         }
     }
